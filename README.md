@@ -1,5 +1,5 @@
 #RI Web Branching Strategy
-#
+
 #
 ![alt text](https://github.com/rockimmortal/riweb/blob/master/riweb-branching.png?raw=true "branching")
 
@@ -10,3 +10,4 @@
 5. The release branch is created off of any number of sprint/feature branches.
 6. Prod is our production environment and release is merged into it.
 7. Once stability is confirmed, prod is cloned to master as the new "last known good".
+#
