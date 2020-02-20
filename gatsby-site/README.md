@@ -1,3 +1,9 @@
+```
+  gatsby develop                   Start development server. Watches files,
+                                   rebuilds, and hot reloads if something changes
+  gatsby build                     Build a Gatsby project.
+ ```
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
