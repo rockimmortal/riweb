@@ -1,7 +1,6 @@
 ```
-  gatsby develop                   Start development server. Watches files,
-                                   rebuilds, and hot reloads if something changes
-  gatsby build                     Build a Gatsby project.
+  gatsby develop                   Start local development server.
+  gatsby build                     Creates static files that can be deployed to S3.
  ```
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
