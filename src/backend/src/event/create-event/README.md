@@ -1,4 +1,4 @@
-#Create Event
+# Create Event
 
 * Requires a Google Service Account Key called credentials.json in the same folder
 * Looking into how to best put a AWS Lambda Deployment Package on Github, needs the dependency files
