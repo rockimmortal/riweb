@@ -5,7 +5,7 @@
 * Appears to create a calendar but it belongs to the service account itself, looking into how to make it displayable
 
 Creates a Google calendar event using a POST request with a body of:
-'''
+```
 {
     "title": String,
     "location": String,
@@ -13,6 +13,6 @@ Creates a Google calendar event using a POST request with a body of:
     "startdate": DateTime,
     "enddate": DateTime,
 }
-'''
+```
 
 
