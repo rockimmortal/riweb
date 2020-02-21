@@ -11,7 +11,7 @@ Creates a Google calendar event using a POST request with a body of:
     "location": String,
     "description": String,
     "startdate": DateTime,
-    "enddate": DateTime,
+    "enddate": DateTime
 }
 ```
 
