@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib')))
 from googleapiclient.discovery import build
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="credentials.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS']='credentials.json'
 
 def respond(err, res=None):
     return {
@@ -18,6 +18,7 @@ def respond(err, res=None):
 
 def lambda_handler(event, context):
     service = build('calendar', 'v3', cache_discovery=False)
+    
     event = json.loads(event['body'])
     event = {
         'summary': event['title'],
@@ -30,6 +31,6 @@ def lambda_handler(event, context):
             'dateTime': event['enddate'],
         },
     }
-
-    event = service.events().insert(calendarId='primary', body=event).execute()
+    event = service.events().insert(calendarId=os.environ['EMAIL'], body=event).execute()
+    
     return respond(None, f"Event created, id: {event.get('htmlLink')}")
