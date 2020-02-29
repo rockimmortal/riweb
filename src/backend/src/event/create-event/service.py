@@ -20,7 +20,7 @@ def lambda_handler(event, context):
     service = build('calendar', 'v3', cache_discovery=False)
     
     event = json.loads(event['body'])
-    event = {
+    gcal_event = {
         'summary': event['title'],
         'location': event['location'],
         'description': event['description'],
@@ -31,6 +31,6 @@ def lambda_handler(event, context):
             'dateTime': event['enddate'],
         },
     }
-    event = service.events().insert(calendarId=os.environ['EMAIL'], body=event).execute()
+    gcal_event = service.events().insert(calendarId=os.environ['EMAIL'], body=gcal_event).execute()
     
-    return respond(None, f"Event created, id: {event.get('htmlLink')}")
+    return respond(None, f"Event created, id: {gcal_event.get('htmlLink')}")
