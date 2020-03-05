@@ -25,7 +25,11 @@ def lambda_handler(event, context):
     while True:
         event_page = service.events().list(calendarId=os.environ['EMAIL'], pageToken=page_token, q=event['queryStringParameters']['q']).execute()
         for item in event_page['items']:
-            event_list.append(item['id'])
+            entry = []
+            entry.append(item['id'])
+            entry.append(item['summary'])
+            entry.append(item['description'])
+            event_list.append(entry)
         page_token = event_page.get('nextPageToken')
         if not page_token:
             break
