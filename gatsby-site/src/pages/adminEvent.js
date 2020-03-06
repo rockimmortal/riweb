@@ -13,6 +13,7 @@ const AdminEvent = () => (
     <div style={{
         marginTop:`25px`,
         marginLeft: `25px`,
+        marginBottom:`25px`
     }}>
         <div className="row">
             <div className="col">
