@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import logo from '../images/Logo.png'
+import { Link } from "gatsby"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,11 +16,10 @@ const navBar = () => (
             paddingBottom: `1px`
         }}/>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            {/* <a className="navbar-brand" href="#">Navbar</a> */}
             <div className="collapse navbar-collapse" id="navbarColor01">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                    <a className="nav-link mx-3" href="#">Home <span className="sr-only">(current)</span></a>
+                    <Link to="/adminEvent"><div className="nav-link mx-3">Home</div></Link>
                     </li>
                     <li className="nav-item">
                     <a className="nav-link mx-3" href="#">Features</a>
