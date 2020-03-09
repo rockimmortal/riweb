@@ -20,10 +20,11 @@ def lambda_handler(event, context):
     service = build('calendar', 'v3', cache_discovery=False)
     page_token = None
     event_list = []
+    queryString = '' if not event['queryStringParameters'] else event['queryStringParameters']['q']
 
     # get paginated list of event ids
     while True:
-        event_page = service.events().list(calendarId=os.environ['EMAIL'], pageToken=page_token, q=event['queryStringParameters']['q']).execute()
+        event_page = service.events().list(calendarId=os.environ['EMAIL'], pageToken=page_token, q=queryString).execute()
         for item in event_page['items']:
             entry = []
             entry.append(item['id'])
