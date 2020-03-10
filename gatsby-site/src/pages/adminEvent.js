@@ -5,12 +5,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logo from '../images/Logo.png'
 
+import CreateEvent from '../components/createEvent'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const AdminEvent = () => (
   <Layout>
     <SEO title="Admin Event" />
     <div style={{
         marginTop:`25px`,
         marginLeft: `25px`,
+        marginBottom:`25px`
     }}>
         <div className="row">
             <div className="col">
@@ -58,25 +63,9 @@ const AdminEvent = () => (
                 </label>
             </div>
         </div>
-
-        <div className="container d-flex justify-content-center" style={{
-            border:`1px solid`,
-        }}>
-            <form>
-                <div className="row">
-                    <div className="form-group">
-                        <div className="col d-flex justify-content-start">
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Performer Name"/>
-                        </div>
-                    </div>
-                    <div className="col d-flex justify-content-end">
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-                    </div>
-                </div>
-                <textarea id="exampleFormControlTextarea1" rows="8" cols="118" placeholder="Event details/Description go here"></textarea>
-            </form>
-        </div>
-
+{/* Seperate to component */}
+        <CreateEvent />
+{/* Seperate to component */}
     </div>
 
   </Layout>
