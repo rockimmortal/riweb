@@ -20,7 +20,7 @@ def respond(err, res=None):
     }
 
 def lambda_handler(event, context):
-	event = json.loads(event['body'])
+    event = json.loads(event['body'])
 
     result = []
     conn = pymysql.connect(db_host, user=user, passwd=password, db=db_name, connect_timeout=5)
