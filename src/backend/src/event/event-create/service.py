@@ -26,8 +26,10 @@ def respond(err, res=None):
 def db_insert(event, cal_id):
     conn = pymysql.connect(db_host, user=user, passwd=password, db=db_name, connect_timeout=5)
     with conn.cursor() as cur:
-        cur.execute("INSERT INTO event (cal_id, summary, location, description, startDate, endDate) "
-                    "VALUES ('%s', '%s', '%s', '%s', '%s', '%s')" % (cal_id, event['summary'], event['location'], event['description'], event['startDate'], event['endDate']))
+        cur.execute(f"""
+                    INSERT INTO event (cal_id, summary, location, description, startDate, endDate) 
+                    VALUES ('{cal_id}', '{event['summary']}', '{event['location']}', '{event['description']}', '{event['startDate']}', '{event['endDate']}')
+                    """)
         conn.commit()
         cur.close()
     conn.close()
