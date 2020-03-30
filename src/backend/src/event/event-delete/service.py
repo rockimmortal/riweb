@@ -24,8 +24,10 @@ def respond(err, res=None):
 def db_delete(event):
     conn = pymysql.connect(db_host, user=user, passwd=password, db=db_name, connect_timeout=5)
     with conn.cursor() as cur:
-        cur.execute("DELETE FROM event WHERE "
-                    "cal_id='%s'" % (event['queryStringParameters']['id']))
+        cur.execute(f"""
+                    DELETE FROM event 
+                    WHERE cal_id='{event['queryStringParameters']['id']}'
+                    """)
         conn.commit()
         cur.close()
     conn.close()
