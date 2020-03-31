@@ -56,7 +56,7 @@ def cal_insert(event, cal_id):
     cal_event = service.events().insert(calendarId=os.environ['EMAIL'], body=cal_event).execute()
 
 def lambda_handler(event, context):
-    event = json.loads(event['body'])
+    event = json.loads(event['Records'][0]['body'])
     cal_id = gen_cal_id()
 
     db_insert(event, cal_id)
