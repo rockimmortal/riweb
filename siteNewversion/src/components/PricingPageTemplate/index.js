@@ -3,19 +3,22 @@ import Helmet from 'react-helmet'
 import Pricing from '../Pricing'
 import PropTypes from 'prop-types'
 
+
 const PricingPageTemplate = ({
   title,
   meta_title,
   meta_description,
   pricing,
 }) => (
+  
   <div>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
+    
     <section className='hero is-primary is-bold is-medium'>
-      <div className='hero-body'>
+      <div className='hero-body'> 
         <div className='container'>
           <div className='columns'>
             <div className='column is-10 is-offset-1'>
@@ -23,6 +26,7 @@ const PricingPageTemplate = ({
                 <h1 className='title'>
                   {title}
                 </h1>
+                
               </div>
             </div>
           </div>

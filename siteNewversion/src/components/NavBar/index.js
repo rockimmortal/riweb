@@ -4,6 +4,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import SearchBox from '../SearchBox'
 
 const NavBar = ({ toggleNavbar, isActive }) => (
+  
   <StaticQuery
     query={graphql`
             query SearchIndexQuery {
@@ -14,9 +15,10 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         `}
     render={data => (
       <nav className='navbar is-fixed-top' aria-label='main navigation'>
+        
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-            <strong>Rock Immortal</strong>
+          <img src="/img/rockimmortal.png"></img>
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -36,7 +38,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             <Link className='navbar-item' to='/about'>
                             About
             </Link>
-            <Link className='navbar-item' to='/pricing'>
+            <Link className='navbar-item' to='/calendar'>
                             Calendar
             </Link>
             <Link className='navbar-item' to='/blog'>
@@ -58,6 +60,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
       </nav>
     )}
   />
+  
 )
 
 export default NavBar

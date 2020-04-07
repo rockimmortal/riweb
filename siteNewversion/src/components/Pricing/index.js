@@ -1,9 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+
 const Pricing = ({ data }) => (
+
   <div className='columns'>
     {data.map(price => (
+
       <div key={price.plan} className='column' style={{ border: '1px solid #eaecee' }}>
         {/* <section className='section'>
           <h4 className='has-text-centered has-text-weight-semibold'>
@@ -22,6 +25,7 @@ const Pricing = ({ data }) => (
           </ul>
         </section> */}
       </div>
+      
     ))}
   </div>
 )
@@ -36,5 +40,7 @@ Pricing.propTypes = {
     })
   ),
 }
+
+
 
 export default Pricing

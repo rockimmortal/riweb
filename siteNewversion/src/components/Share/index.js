@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import {
   FacebookShareButton,
+  InstapaperShareButton,
   LinkedinShareButton,
   TwitterShareButton,
   TelegramShareButton,
   RedditShareButton,
   FacebookShareCount,
   RedditShareCount,
+  InstapaperIcon,
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
@@ -27,31 +29,15 @@ class Share extends Component {
 
     return (
       <div className='social-links'>
-        <RedditShareButton url={url} title={title}>
-          <RedditIcon round size={iconSize} />
-          <RedditShareCount url={url}>
-            {count => <div className='share-count'>{filter(count)}</div>}
-          </RedditShareCount>
-        </RedditShareButton>
         <TwitterShareButton url={url} title={title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
+         <InstapaperShareButton url={url}>
+          <InstapaperIcon round size={iconSize} />
+        </InstapaperShareButton>
         <FacebookShareButton url={url} quote={excerpt}>
           <FacebookIcon round size={iconSize} />
-          <FacebookShareCount url={url}>
-            {count => <div className='share-count'>{filter(count)}</div>}
-          </FacebookShareCount>
-        </FacebookShareButton>
-        <LinkedinShareButton
-          url={url}
-          title={title}
-          description={excerpt}
-        >
-          <LinkedinIcon round size={iconSize} />
-        </LinkedinShareButton>
-        <TelegramShareButton url={url}>
-          <TelegramIcon round size={iconSize} />
-        </TelegramShareButton>
+        </FacebookShareButton>   
       </div>
     )
   }
