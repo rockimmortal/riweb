@@ -23,7 +23,7 @@ def get_params(event):
     query = ''
     entry_count = 10
     
-    if 'queryStringParameters' in event:
+    if event['queryStringParameters']:
         if 'q' in event['queryStringParameters']:
             query = event['queryStringParameters']['q']
         if 'entry_count' in event['queryStringParameters']:
