@@ -1,15 +1,18 @@
 ---
 templateKey: article-page
-title: Blog|Rock Immortal
-slug: Blog|Rock Immortal
-date: 2020-03-29T03:55:49.370Z
+title: Rock Immortal Blog
+slug: News|Rock Immortal
+date: 2020-05-01T03:55:49.370Z
 cover: /img/rockimmortalblk.png
-meta_title: Blog|Rock Immortal
+meta_title: News|Rock Immortal
 meta_description: >-
 
 tags:
   - Rock Immortal
 ---
 
-## Rock Immortal Blog
+## Rock Immortal News
+###Welcome to the blog!
+#
+####There is nothing new yet but stay tuned!
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Content from '../Content'
 import PropTypes from 'prop-types'
 
-const AboutPageTemplate = ({ title, content, contentComponent }) => {
+const AdminPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -37,10 +37,10 @@ const AboutPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-AboutPageTemplate.propTypes = {
+AdminPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-export default AboutPageTemplate
+export default AdminPageTemplate

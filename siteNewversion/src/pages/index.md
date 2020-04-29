@@ -1,6 +1,6 @@
 ---
 templateKey: 'home-page'
-title: Rock Immortal Ticket Sales Web App
+title: Ticket Sales Web App
 meta_title: Rock Immortal | Home
 meta_description: >-
   Rock Immortal Ticket Page

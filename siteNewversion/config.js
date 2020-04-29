@@ -14,6 +14,6 @@ module.exports = {
   userLocation: 'Rock, Immortal',
   userDescription: '',
   copyright: ' Copyright © Rock Immortal. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
-  themeColor: '#00d1b2', // Used for setting manifest and progress theme colors.
+  themeColor: '#000000', // Used for setting manifest and progress theme colors.
   backgroundColor: '#000000', // Used for setting manifest background color.
 }

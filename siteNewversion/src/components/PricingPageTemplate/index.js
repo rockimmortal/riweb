@@ -17,16 +17,15 @@ const PricingPageTemplate = ({
       <meta name='description' content={meta_description} />
     </Helmet>
     
-    <section className='hero is-primary is-bold is-medium'>
+    <section className='hero is-primary is-bold is-small'>
       <div className='hero-body'> 
         <div className='container'>
           <div className='columns'>
-            <div className='column is-10 is-offset-1'>
+            <div className='column is-11 is-offset-0'>
               <div className='section'>
                 <h1 className='title'>
                   {title}
                 </h1>
-                
               </div>
             </div>
           </div>
@@ -37,12 +36,12 @@ const PricingPageTemplate = ({
       <div className='container'>
         <div className='section'>
           <div className='columns'>
-            <div className='column is-10 is-offset-1'>
+            <div className='column is-11 is-offset-0'>
               <div className='content'>
-                <h2 className='has-text-weight-semibold is-size-2'>
+                <h2 className='has-text-weight-semibold is-size-10'>
                   {pricing.heading}
                 </h2>
-                <p className='is-size-5'>{pricing.description}</p>
+                <p className='is-size-50'>{pricing.description}</p>
                 <Pricing data={pricing.plans} />
               </div>
             </div>

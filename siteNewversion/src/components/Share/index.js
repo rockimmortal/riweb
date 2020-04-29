@@ -22,22 +22,25 @@ class Share extends Component {
   render () {
     const { title, slug, excerpt, mobile } = this.props
     const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-    const url = config.siteUrl + realPrefix + slug
+    //const url = config.siteUrl + realPrefix + slug
 
     const iconSize = mobile ? 36 : 48
     const filter = count => (count > 0 ? count : '')
 
     return (
       <div className='social-links'>
-        <TwitterShareButton url={url} title={title}>
-          <TwitterIcon round size={iconSize} />
-        </TwitterShareButton>
-         <InstapaperShareButton url={url}>
-          <InstapaperIcon round size={iconSize} />
-        </InstapaperShareButton>
-        <FacebookShareButton url={url} quote={excerpt}>
-          <FacebookIcon round size={iconSize} />
-        </FacebookShareButton>   
+        <a href="https://gmail.com">
+        <TelegramIcon round size={iconSize} />
+        </a> 
+        <div></div>  
+        <a href="https://twitter.com/rockimmortalsf">
+        <TwitterIcon round size={iconSize} />
+        </a> 
+        <div></div>
+        <a href="https://www.facebook.com/RockImmortalProductions/">
+        <FacebookIcon round size={iconSize} />
+        </a> 
+        <div></div>
       </div>
     )
   }

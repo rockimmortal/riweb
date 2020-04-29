@@ -18,7 +18,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-          <img src="/img/rockimmortal.png"></img>
+          <img src="/img/rockimmortalWhite.png"></img>
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -35,11 +35,11 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           <div className='navbar-end'>
             <Share></Share>
             <SearchBox searchIndex={data.siteSearchIndex.index} />
-            <Link className='navbar-item' to='/about'>
-                            About
-            </Link>
             <Link className='navbar-item' to='/calendar'>
                             Calendar
+            </Link>
+            <Link className='navbar-item' to='/about'>
+                            About Us
             </Link>
             <Link className='navbar-item' to='/blog'>
                             Blog
@@ -51,6 +51,17 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                     className='button is-primary is-outlined'
                     to='/contact'>
                             Contact Us
+                  </Link>
+                </p>
+              </div>
+            </div>
+            <div className='navbar-item'>
+              <div className='field is-grouped'>
+                <p className='control'>
+                  <Link
+                    className='button is-primary is-outlined'
+                    to='/login'>
+                            Admin Area
                   </Link>
                 </p>
               </div>
