@@ -49,7 +49,7 @@ def cal_modify(event):
     target_event = service.events().update(calendarId=os.environ['EMAIL'], eventId=event['id'], body=target_event).execute()
 
 def lambda_handler(event, context):
-    event = json.loads(event['body'])
+    event = json.loads(event['Records'][0]['body'])
     update_string = gen_update_string(event)
 
     db_modify(event, update_string)
