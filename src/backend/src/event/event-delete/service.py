@@ -26,7 +26,7 @@ def db_delete(event):
     with conn.cursor() as cur:
         cur.execute(f"""
                     DELETE FROM event 
-                    WHERE cal_id='{event['queryStringParameters']['id']}'
+                    WHERE cal_id='{event['id']}'
                     """)
         conn.commit()
         cur.close()
@@ -34,10 +34,11 @@ def db_delete(event):
 
 def cal_delete(event):
     service = build('calendar', 'v3', cache_discovery=False)
-    service.events().delete(calendarId=os.environ['EMAIL'], eventId=event['queryStringParameters']['id']).execute()
+    service.events().delete(calendarId=os.environ['EMAIL'], eventId=event['id']).execute()
 
 def lambda_handler(event, context):
+    event = json.loads(event['Records'][0]['body'])
     db_delete(event)
     cal_delete(event)
 
-    return respond(None, f"Event deleted, id: {event['queryStringParameters']['id']}")
+    return respond(None, f"Event deleted, id: {event['id']}")
