@@ -6,6 +6,6 @@ Searches particular fields of a MySQL table using a GET request with the optiona
 q: String,
 entry_count: int
 ```
-Returns a list of events and a portion of their info
+Returns a json list of events and their details
 
 
