@@ -1,13 +1,11 @@
 # Search Event
+* Requires environment variables for MySQL datbase host, name, username, password (Should probably be managed in another way)
 
-* Requires a Google Service Account Key called credentials.json in the same folder
-* Requires environment variable 'EMAIL' to create the event in, must allow service account's email to change events in the destination calendar's settings
-* Looking into AWS CodePipeline
-
-Searches ALL fields of ALL events of a Google calendar using a GET request with the optional query string parameter:
+Searches particular fields of a MySQL table using a GET request with the optional query string parameters:
 ```
-q
+q: String,
+entry_count: int
 ```
-Returns a paginated list of events by id
+Returns a json list of events and their details
 
 
