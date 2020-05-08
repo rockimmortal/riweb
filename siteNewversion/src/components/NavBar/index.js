@@ -2,6 +2,7 @@ import React from 'react'
 import Share from '../Share'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import SearchBox from '../SearchBox'
+import logo from '../../assets/img/Logo.png'
 
 const NavBar = ({ toggleNavbar, isActive }) => (
   
@@ -18,7 +19,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-          <img src="../../img/rockimmortalWhite.png" alt="White Logo" ></img>
+          <img src={logo} alt="White Logo" ></img>
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -60,7 +61,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                 <p className='control'>
                   <Link
                     className='button is-primary is-outlined'
-                    to='/adminV2'>
+                    to='/adminLogin'>
                             Admin Area
                   </Link>
                 </p>

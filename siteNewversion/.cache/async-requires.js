@@ -2,8 +2,10 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
-  "component---cache-caches-gatsby-plugin-offline-app-shell-js": () => import("./caches/gatsby-plugin-offline/app-shell.js" /* webpackChunkName: "component---cache-caches-gatsby-plugin-offline-app-shell-js" */),
+  "component---cache-dev-404-page-js": () => import("./dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
+  "component---src-pages-admin-js": () => import("./../src/pages/admin.js" /* webpackChunkName: "component---src-pages-admin-js" */),
+  "component---src-pages-admin-login-js": () => import("./../src/pages/adminLogin.js" /* webpackChunkName: "component---src-pages-admin-login-js" */),
   "component---src-pages-contact-success-index-js": () => import("./../src/pages/contact/success/index.js" /* webpackChunkName: "component---src-pages-contact-success-index-js" */),
   "component---src-pages-tags-index-js": () => import("./../src/pages/tags/index.js" /* webpackChunkName: "component---src-pages-tags-index-js" */),
   "component---src-templates-about-page-js": () => import("./../src/templates/about-page.js" /* webpackChunkName: "component---src-templates-about-page-js" */),
