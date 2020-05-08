@@ -15,7 +15,7 @@ const HomePageTemplate = ({
   testimonials,
 }) => (
   <div>
-    <img src="/img/rockimmortalblk.png"></img>
+    <img src="../../img/rockimmortalblk.png" alt="Black Logo"></img>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
@@ -63,7 +63,6 @@ const HomePageTemplate = ({
     <td>Band B</td>
     <td>Feb 21, 2020</td>
     <td>Venue B</td>
-
   </tr>
   <tr>
     <td>Band C</td>

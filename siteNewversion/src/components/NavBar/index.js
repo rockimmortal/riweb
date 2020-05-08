@@ -18,7 +18,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
         
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-          <img src="/img/rockimmortalWhite.png"></img>
+          <img src="../../img/rockimmortalWhite.png" alt="White Logo" ></img>
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -60,7 +60,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
                 <p className='control'>
                   <Link
                     className='button is-primary is-outlined'
-                    to='/login'>
+                    to='/adminV2'>
                             Admin Area
                   </Link>
                 </p>
