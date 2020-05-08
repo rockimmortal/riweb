@@ -142,15 +142,6 @@ class createEvent extends Component {
 
                     </div>
 
-
-                    <div className="form-row d-flex">
-                        <div className="form-group">
-                            <div className="col w-100">
-                                <input type="email" className="form-control" id="exampleInputEmail6" aria-describedby="emailHelp" placeholder="Event Location" />
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="form-row d-flex">
                         <div className="form-group mr-auto">
                             <div className="col w-100">
@@ -172,7 +163,7 @@ class createEvent extends Component {
 
                     <div className="form-row d-flex">
                         <button type="button" className="btn btn-success ml-auto" onClick={this.postDataHandler}>Save</button>
-                        <button type="button" className="btn btn-danger ml-1">Cancle</button>
+                        <button type="button" className="btn btn-danger ml-1">Cancel</button>
                     </div>
 
                 </form>
