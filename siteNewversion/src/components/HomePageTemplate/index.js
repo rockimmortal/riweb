@@ -4,6 +4,7 @@ import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import Share from '../Share'
 import PropTypes from 'prop-types'
+import logo from '../../assets/img/Logo.png'
 
 const HomePageTemplate = ({
   title,
@@ -15,7 +16,7 @@ const HomePageTemplate = ({
   testimonials,
 }) => (
   <div>
-    <img src="/img/rockimmortalblk.png"></img>
+    <img src={logo} alt="Black Logo"></img>
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
@@ -63,7 +64,6 @@ const HomePageTemplate = ({
     <td>Band B</td>
     <td>Feb 21, 2020</td>
     <td>Venue B</td>
-
   </tr>
   <tr>
     <td>Band C</td>

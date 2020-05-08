@@ -17,6 +17,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+    	resolve: `gatsby-plugin-s3`,
+	options: {
+		bucketName: "www.rockimmortal.com",
+	},
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
@@ -66,14 +72,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-        enableIdentityWidget: true,
-        htmlTitle: `Gatsby Starter Business Content Manager`,
       },
     },
     {
@@ -205,6 +203,5 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-netlify`,
   ],
 }
