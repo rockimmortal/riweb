@@ -36,7 +36,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
           <div className='navbar-end'>
             <Share></Share>
             <SearchBox searchIndex={data.siteSearchIndex.index} />
-            <Link className='navbar-item' to='/calendar'>
+            <Link className='navbar-item' to='/eventCalendar'>
                             Calendar
             </Link>
             <Link className='navbar-item' to='/about'>

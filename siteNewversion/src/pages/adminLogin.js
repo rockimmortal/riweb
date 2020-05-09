@@ -4,9 +4,9 @@ import { Link } from "gatsby"
 
 const adminLogin = () => (
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm"></div>
+    <div className="container">
+        <div className="row">
+            <div className="col-sm"></div>
             <div className="card col-sm" style={{
                 textAlign:`center`
             }}>
@@ -16,17 +16,17 @@ const adminLogin = () => (
                 }}>
                     <img src={logo} />
                 </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
+                <div className="input-group mb-3">
+                    <div className="input-group-prepend">
+                        <span className="input-group-text" id="basic-addon1" style={{width:`6em`}}>@Email</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                    <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                 </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
+                <div className="input-group mb-3">
+                    <div className="input-group-prepend">
+                        <span className="input-group-text" id="basic-addon1" style={{width:`6em`}}>Password</span>
                     </div>
-                    <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" />
+                    <input type="password" className="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" />
                 </div>
 
                 <Link to="/admin" className="btn btn-secondary" style={{
@@ -35,7 +35,7 @@ const adminLogin = () => (
                 }}>Log In</Link>
 
             </div>
-            <div class="col-sm"></div>
+            <div className="col-sm"></div>
         </div>
   </div>
 )

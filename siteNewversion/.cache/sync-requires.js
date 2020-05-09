@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-admin-js": hot(preferDefault(require("/Users/lykos/capstone/riweb/siteNewversion/src/pages/admin.js"))),
   "component---src-pages-admin-login-js": hot(preferDefault(require("/Users/lykos/capstone/riweb/siteNewversion/src/pages/adminLogin.js"))),
   "component---src-pages-contact-success-index-js": hot(preferDefault(require("/Users/lykos/capstone/riweb/siteNewversion/src/pages/contact/success/index.js"))),
+  "component---src-pages-event-calendar-js": hot(preferDefault(require("/Users/lykos/capstone/riweb/siteNewversion/src/pages/eventCalendar.js"))),
   "component---src-pages-tags-index-js": hot(preferDefault(require("/Users/lykos/capstone/riweb/siteNewversion/src/pages/tags/index.js"))),
   "component---src-templates-about-page-js": hot(preferDefault(require("/Users/lykos/capstone/riweb/siteNewversion/src/templates/about-page.js"))),
   "component---src-templates-article-page-js": hot(preferDefault(require("/Users/lykos/capstone/riweb/siteNewversion/src/templates/article-page.js"))),
