@@ -7,6 +7,6 @@ Once you have created the Google API service account, take note of the email ass
 
 Access the settings of the calendar of the newly created regular account and ensure it is set up like this:
 
-![ss_google_cal](https://raw.githubusercontent.com/rockimmortal/riweb/documentation/src/backend/doc/img/ss_google_cal.png)
+![ss_cal_settings](https://raw.githubusercontent.com/rockimmortal/riweb/documentation/src/backend/doc/img/ss_cal_settings.png)
 
 Please see the example microservices for how to connect to the calendar using Python 3.
