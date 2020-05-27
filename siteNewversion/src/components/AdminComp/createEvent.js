@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import { Link } from 'gatsby';
 
 class createEvent extends Component {
     state = {
@@ -162,7 +163,7 @@ class createEvent extends Component {
                     </div>
 
                     <div className="form-row d-flex">
-                        <button type="button" className="btn btn-success ml-auto" onClick={this.postDataHandler}>Save</button>
+                        <Link to="/" className="btn btn-success ml-auto" onClick={this.postDataHandler}>Save</Link>
                         <button type="button" className="btn btn-danger ml-1">Cancel</button>
                     </div>
 

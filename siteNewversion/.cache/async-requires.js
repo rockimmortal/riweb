@@ -7,6 +7,7 @@ exports.components = {
   "component---src-pages-admin-js": () => import("./../src/pages/admin.js" /* webpackChunkName: "component---src-pages-admin-js" */),
   "component---src-pages-admin-login-js": () => import("./../src/pages/adminLogin.js" /* webpackChunkName: "component---src-pages-admin-login-js" */),
   "component---src-pages-contact-success-index-js": () => import("./../src/pages/contact/success/index.js" /* webpackChunkName: "component---src-pages-contact-success-index-js" */),
+  "component---src-pages-event-calendar-js": () => import("./../src/pages/eventCalendar.js" /* webpackChunkName: "component---src-pages-event-calendar-js" */),
   "component---src-pages-tags-index-js": () => import("./../src/pages/tags/index.js" /* webpackChunkName: "component---src-pages-tags-index-js" */),
   "component---src-templates-about-page-js": () => import("./../src/templates/about-page.js" /* webpackChunkName: "component---src-templates-about-page-js" */),
   "component---src-templates-article-page-js": () => import("./../src/templates/article-page.js" /* webpackChunkName: "component---src-templates-article-page-js" */),
